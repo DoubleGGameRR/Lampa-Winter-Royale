@@ -1,0 +1,11 @@
+{
+  "name": "lampa-winter-royale",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium red-and-gold winter theme for Lampa",
+  "scripts": {
+    "check": "node --check winter-royale.js",
+    "test": "node tests/smoke.js"
+  },
+  "license": "MIT"
+}
