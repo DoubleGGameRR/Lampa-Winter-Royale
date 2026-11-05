@@ -1,9 +1,9 @@
 /*
  * Lampa Winter Royale
- * Version: 1.0.0 | 2026-11-05
+ * Version: 1.0.1 | 2026-11-05
  * Premium red-and-gold winter theme for Lampa 3.4.4.
  * ES5-compatible; no analytics, ads, trackers or third-party scripts.
- * Decorative artwork: Font Awesome Free 7.3.1 (CC BY 4.0).
+ * Decorative artwork: OpenMoji (CC BY-SA 4.0) and Font Awesome Free (CC BY 4.0).
  * Code: MIT License.
  */
 (function () {
@@ -68,24 +68,19 @@
     '#wr-scene,#wr-scene *{pointer-events:none!important;user-select:none!important}',
     '#wr-scene{display:none;position:fixed;inset:0;z-index:2;overflow:hidden}',
     'html.wr-on #wr-scene{display:block}',
-    '#wr-garland{position:absolute;left:8vw;right:8vw;top:0;height:2.2em;opacity:.92;filter:drop-shadow(0 .15em .35em rgba(222,170,58,.28))}',
-    '#wr-garland:before{content:"";position:absolute;left:0;right:0;top:.16em;height:.11em;background:linear-gradient(90deg,transparent,var(--wr-gold) 8%,#fff0aa 50%,var(--wr-gold) 92%,transparent);border-radius:50%;box-shadow:0 0 .5em rgba(237,191,79,.5)}',
-    '#wr-garland .wr-ornament{position:absolute;top:.18em;width:1.4em;height:1.4em;opacity:.92;filter:brightness(0) saturate(100%) invert(77%) sepia(58%) saturate(657%) hue-rotate(357deg) brightness(94%) contrast(88%) drop-shadow(0 0 .23em rgba(255,215,104,.48))}',
-    '#wr-garland .wr-o1{left:12%}#wr-garland .wr-o2{left:31%;filter:brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(2825%) hue-rotate(341deg) brightness(91%) contrast(88%)}#wr-garland .wr-o3{left:49%}#wr-garland .wr-o4{left:68%;filter:brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(2825%) hue-rotate(341deg) brightness(91%) contrast(88%)}#wr-garland .wr-o5{left:86%}',
-    '#wr-garland .wr-bell{width:1.05em;height:1.05em}',
-    '#wr-tree{position:absolute;right:-.9em;bottom:-.2em;width:10em;height:17em;max-width:16vw;max-height:36vh;opacity:.88;filter:drop-shadow(0 0 1.1em rgba(226,180,65,.34))}',
-    '#wr-tree .wr-tree-icon{width:100%;height:100%;filter:brightness(0) saturate(100%) invert(67%) sepia(69%) saturate(473%) hue-rotate(359deg) brightness(91%) contrast(88%)}',
-    '#wr-tree .wr-tree-star{position:absolute;left:42%;top:-.1em;width:1.5em;height:1.5em;filter:brightness(0) saturate(100%) invert(88%) sepia(45%) saturate(744%) hue-rotate(345deg) brightness(105%) contrast(101%) drop-shadow(0 0 .45em rgba(255,218,114,.8))}',
-    '#wr-tree .wr-tree-gift{position:absolute;bottom:.35em;width:2.15em;height:2.15em;filter:brightness(0) saturate(100%) invert(22%) sepia(90%) saturate(2858%) hue-rotate(342deg) brightness(93%) contrast(91%) drop-shadow(0 .2em .35em rgba(0,0,0,.35))}',
-    '#wr-tree .wr-gift-left{left:8%}#wr-tree .wr-gift-right{right:5%;width:1.75em;height:1.75em;filter:brightness(0) saturate(100%) invert(82%) sepia(42%) saturate(819%) hue-rotate(352deg) brightness(97%) contrast(88%) drop-shadow(0 .2em .35em rgba(0,0,0,.35))}',
-    '#wr-tree:before,#wr-tree:after{content:"";position:absolute;border-radius:50%;background:#d5212d;box-shadow:0 0 .7em rgba(247,52,58,.7)}',
-    '#wr-tree:before{width:.55em;height:.55em;left:34%;top:38%}#wr-tree:after{width:.42em;height:.42em;left:61%;top:56%;background:#f0c96a}',
-    '#wr-santa{position:absolute;top:2.8em;left:-13em;width:10em;height:3.2em;opacity:.18;filter:drop-shadow(0 0 .45em rgba(231,183,69,.35))}',
-    '#wr-santa .wr-sleigh-icon{width:100%;height:100%;filter:brightness(0) saturate(100%) invert(77%) sepia(58%) saturate(657%) hue-rotate(357deg) brightness(94%) contrast(88%)}',
-    'html.wr-on.wr-motion:not(.wr-eco) #wr-santa{animation:wr-santa-fly 46s linear infinite}',
-    '@keyframes wr-santa-fly{0%,72%{transform:translateX(-15vw);opacity:0}75%{opacity:.16}94%{opacity:.16}98%,100%{transform:translateX(125vw);opacity:0}}',
+    '#wr-garland{position:absolute;left:17vw;right:8.5em;top:4.05em;height:2.8em;opacity:.98;filter:drop-shadow(0 .15em .35em rgba(222,170,58,.32))}',
+    '#wr-garland:before{content:"";position:absolute;left:0;right:0;top:.12em;height:.12em;background:linear-gradient(90deg,transparent,var(--wr-gold) 5%,#fff0aa 50%,var(--wr-gold) 95%,transparent);border-radius:50%;box-shadow:0 0 .6em rgba(237,191,79,.58)}',
+    '#wr-garland .wr-ornament{position:absolute;top:.18em;width:1.62em;height:1.62em;opacity:.96;filter:drop-shadow(0 .16em .2em rgba(0,0,0,.38))}',
+    '#wr-garland .wr-o1{left:8%}#wr-garland .wr-o2{left:29%;filter:brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(2825%) hue-rotate(341deg) brightness(91%) contrast(88%)}#wr-garland .wr-o3{left:49%}#wr-garland .wr-o4{left:69%;filter:brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(2825%) hue-rotate(341deg) brightness(91%) contrast(88%)}#wr-garland .wr-o5{left:90%}',
+    '#wr-garland .wr-bell{width:1.75em;height:1.75em}',
+    '#wr-tree{position:absolute;right:.7em;top:3.85em;width:3.15em;height:3.4em;opacity:.98;filter:drop-shadow(0 0 .55em rgba(226,180,65,.32))}',
+    '#wr-tree .wr-tree-icon{width:100%;height:100%}',
+    '#wr-santa{position:absolute;right:4.35em;top:4.02em;width:2.9em;height:2.9em;opacity:.98;filter:drop-shadow(0 .15em .32em rgba(0,0,0,.42))}',
+    '#wr-santa .wr-santa-icon{width:100%;height:100%}',
+    'html.wr-on.wr-motion:not(.wr-eco) #wr-santa{animation:wr-santa-greet 5.8s ease-in-out infinite}',
+    '@keyframes wr-santa-greet{0%,100%{transform:rotate(-2deg) translateY(0)}50%{transform:rotate(2deg) translateY(-2px)}}',
     '#wr-snow{position:absolute;inset:0;z-index:0}',
-    '#wr-snow .wr-flake{position:absolute;top:-7vh;width:.75em;height:.75em;color:rgba(255,255,250,.72);opacity:.65}',
+    '#wr-snow .wr-flake{position:absolute;top:-7vh;width:.56em;height:.56em;color:rgba(255,255,250,.72);opacity:.34}',
     '#wr-snow .wr-flake img{width:100%;height:100%;filter:brightness(0) invert(1)}',
     'html.wr-on.wr-motion:not(.wr-eco) #wr-snow .wr-flake{animation:wr-snow-fall var(--wr-duration) linear infinite;animation-delay:var(--wr-delay)}',
     '@keyframes wr-snow-fall{0%{transform:translate3d(0,-8vh,0) rotate(0deg)}100%{transform:translate3d(var(--wr-drift),112vh,0) rotate(320deg)}}',
@@ -93,8 +88,8 @@
     'html.wr-on.wr-balanced #wr-snow .wr-extra{display:none}',
     'html.wr-on:not(.wr-garland) #wr-garland,html.wr-on:not(.wr-tree) #wr-tree,html.wr-on:not(.wr-santa) #wr-santa,html.wr-on:not(.wr-snow) #wr-snow{display:none}',
     'body.settings--open #wr-scene,body.selectbox--open #wr-scene,body.modal--open #wr-scene,body.player--open #wr-scene,body.video--open #wr-scene{display:none!important}',
-    '@media(max-width:900px){#wr-garland{left:14vw;right:5vw;opacity:.75}#wr-tree{width:7em;height:11em;opacity:.72}#wr-santa{display:none}}',
-    '@media(max-width:640px){#wr-tree{display:none}#wr-garland .wr-o2,#wr-garland .wr-o4{display:none}}',
+    '@media(max-width:1100px){#wr-garland{left:20vw;right:7.2em}#wr-garland .wr-ornament{width:1.35em;height:1.35em}#wr-tree{width:2.7em;height:2.9em}#wr-santa{right:3.8em;width:2.5em;height:2.5em}}',
+    '@media(max-width:760px){#wr-tree,#wr-santa{display:none}#wr-garland{left:24vw;right:3vw}#wr-garland .wr-o2,#wr-garland .wr-o4{display:none}}',
     '@media(prefers-reduced-motion:reduce){html.wr-on #wr-santa,html.wr-on #wr-snow .wr-flake{animation:none!important}html.wr-on .card__view{transition:none!important}}'
   ].join('\n');
 
@@ -125,14 +120,14 @@
     scene.innerHTML = '' +
       '<div id="wr-snow">' + snowMarkup() + '</div>' +
       '<div id="wr-garland">' +
-        icon('bell', 'wr-ornament wr-bell wr-o1', '') +
+        icon('openmoji/bell', 'wr-ornament wr-bell wr-o1', '') +
         icon('candy-cane', 'wr-ornament wr-o2', '') +
-        icon('gift', 'wr-ornament wr-o3', '') +
+        icon('openmoji/gift', 'wr-ornament wr-o3', '') +
         icon('candy-cane', 'wr-ornament wr-o4', '') +
-        icon('bell', 'wr-ornament wr-bell wr-o5', '') +
+        icon('openmoji/bell', 'wr-ornament wr-bell wr-o5', '') +
       '</div>' +
-      '<div id="wr-santa">' + icon('sleigh', 'wr-sleigh-icon', '') + '</div>' +
-      '<div id="wr-tree">' + icon('tree', 'wr-tree-icon', '') + icon('star', 'wr-tree-star', '') + icon('gift', 'wr-tree-gift wr-gift-left', '') + icon('gift', 'wr-tree-gift wr-gift-right', '') + '</div>';
+      '<div id="wr-santa">' + icon('openmoji/santa', 'wr-santa-icon', '') + '</div>' +
+      '<div id="wr-tree">' + icon('openmoji/tree', 'wr-tree-icon', '') + '</div>';
     document.body.appendChild(scene);
   }
 
@@ -188,8 +183,8 @@
       addSetting({name:PREFIX+'snow',type:'trigger','default':true},{name:'Падающий снег',description:'Лёгкий снег позади интерфейса.'});
       addSetting({name:PREFIX+'poster_snow',type:'trigger','default':true},{name:'Снег на постерах',description:'Тонкая снежная кромка, не закрывающая изображение и рейтинг.'});
       addSetting({name:PREFIX+'garland',type:'trigger','default':true},{name:'Гирлянда и колокольчики',description:'Свободная верхняя кромка без перехвата навигации.'});
-      addSetting({name:PREFIX+'tree',type:'trigger','default':true},{name:'Золотая ёлка',description:'Ёлка у нижнего правого края; скрывается поверх окон.'});
-      addSetting({name:PREFIX+'santa',type:'trigger','default':true},{name:'Сани Деда Мороза',description:'Редкое спокойное появление в верхнем фоне.'});
+      addSetting({name:PREFIX+'tree',type:'trigger','default':true},{name:'Новогодняя ёлка',description:'Цветная ёлка в свободной полосе под шапкой.'});
+      addSetting({name:PREFIX+'santa',type:'trigger','default':true},{name:'Дед Мороз',description:'Небольшой Дед Мороз рядом с ёлкой, вне карточек.'});
       addSetting({name:PREFIX+'windows',type:'trigger','default':true},{name:'Праздничные окна',description:'Единая красно-золотая стилизация настроек и диалогов.'});
       addSetting({name:PREFIX+'performance',type:'select',values:{eco:'Экономный',balanced:'Сбалансированный (TV)',full:'Максимальный'},'default':'balanced'},{name:'Производительность',description:'Экономный режим отключает движение. Максимальный показывает больше снежинок.'});
     } catch (error) {
@@ -204,7 +199,7 @@
     injectScene();
     registerSettings();
     apply();
-    if (window.console && console.log) console.log('[Winter Royale] 1.0.0 ready');
+    if (window.console && console.log) console.log('[Winter Royale] 1.0.1 ready');
   }
 
   function bootstrap() {

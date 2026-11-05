@@ -5,6 +5,9 @@ var path = require('path');
 var vm = require('vm');
 var assert = require('assert');
 var source = fs.readFileSync(path.join(__dirname, '..', 'winter-royale.js'), 'utf8');
+var releaseSource = fs.readFileSync(path.join(__dirname, '..', 'winter-royale-v1.0.1.js'), 'utf8');
+
+assert.strictEqual(releaseSource, source, 'versioned release file matches the main plugin');
 
 function classList() {
   var values = {};
@@ -75,7 +78,7 @@ assert.ok(ids['wr-styles'], 'theme CSS is injected');
 assert.ok(ids['wr-scene'], 'decorative scene is injected');
 assert.ok(root.classList.contains('wr-on'), 'theme is enabled by default');
 assert.ok(root.classList.contains('wr-balanced'), 'balanced TV profile is default');
-assert.ok(ids['wr-scene'].innerHTML.indexOf('/assets/tree.svg') !== -1, 'assets resolve next to plugin script');
+assert.ok(ids['wr-scene'].innerHTML.indexOf('/assets/openmoji/tree.svg') !== -1, 'nested assets resolve next to plugin script');
 
 storage.wr_enabled = false;
 settings[0].onChange();
